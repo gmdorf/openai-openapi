@@ -3780,6 +3780,14 @@ paths:
       tags:
         - Assistants
       summary: Create a thread and run it in one request.
+      parameters:
+        - name: OpenAI-Beta
+          in: path
+          required: true
+          schema:
+            type: string
+            default: assistants=v1
+          description: The ID of the thread the run belongs to.
       requestBody:
         required: true
         content:
