@@ -3782,7 +3782,7 @@ paths:
       summary: Create a thread and run it in one request.
       parameters:
         - name: OpenAI-Beta
-          in: path
+          in: header
           required: true
           schema:
             type: string
